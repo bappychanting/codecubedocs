@@ -6,8 +6,6 @@ CodeCube
    :scale: 50 %
    :alt: Codecube Logo
    :align: left
-An easy & lightweight PHP framework inspired by Laravel.
------------
 
 **An easy & lightweight PHP framework inspired by Laravel.**\
 
