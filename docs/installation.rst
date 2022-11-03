@@ -21,6 +21,4 @@ Additional Requirements
 * Composer
 * A standard HTML supported browser 
 
-You can follow this tutorial while setting up Lamp server in Debian based Linux distro to ensure your server setup is up to the standard.
-
-Test hyperlink: `Stack Overflow home <https://stackoverflow.com/>`_.
+You can follow `this tutorial <https://www.linkedin.com/pulse/full-web-development-environment-setup-step-guide-php-mahadi-hasan/>`_ while setting up Lamp server in Debian based Linux distro to ensure your server setup is up to the standard.
