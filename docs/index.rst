@@ -9,7 +9,7 @@ CodeCube
 An easy & lightweight PHP framework inspired by Laravel.
 -----------
 
-:red:`WARNING` :bolditalic:`Don't be stupid!`
+.rst stands for **r**\ e\ **s**\ tructured **t**\ ext.
 
 Aims of this framework are to
 
