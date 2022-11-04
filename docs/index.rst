@@ -1,8 +1,8 @@
-CodeCube
+Prologue
 =====
 .. image:: https://user-images.githubusercontent.com/22908406/197393844-742ec334-eccb-4c52-bc0c-5192ad418a8c.png
 
-**An easy & lightweight PHP framework inspired by Laravel.**\
+**An easy & lightweight PHP framework inspired by `Laravel <https://laravel.com/>`_.**\
 
 Aims of this framework are to-
 
