@@ -1,5 +1,8 @@
+Installation
+============
+
 Server Requirements
-=====
+-----------
 
 The CodeCube framework has a few system requirements. Installing Apache distribution packages such as Xampp, Wamp, Laragon (for windows) or a standard Lamp stack setup (for Linux) will satisfy most if not all requirements. If you are setting up an Apache server manually, make sure your server meets the following requirements:
 
