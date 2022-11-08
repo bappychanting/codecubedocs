@@ -1,5 +1,8 @@
-CodeCube
+Prologue
 =====
+
+CodeCube Framework
+-----------
 
 .. image:: https://user-images.githubusercontent.com/22908406/197393844-742ec334-eccb-4c52-bc0c-5192ad418a8c.png
 
@@ -12,6 +15,8 @@ Aims of this framework are to-
 * Assist PHP newcomers who are looking forward to begin coding in Laravel. Due to familiar, pure PHP coding in a similar structure to Laravel framework, it will be easier for a PHP beginner to adopt this framework, evaluate how the basics of a web framework work and switch to Laravel later on. 
 
 .. toctree::
+	:maxdepth: 2
+   	:hidden:
 
-   self <Prologue>
-   Installation <installation>
+   	self
+   	Installation <installation>
