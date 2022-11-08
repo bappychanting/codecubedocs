@@ -2,7 +2,7 @@ Installation
 ============
 
 Server Requirements
------------
+-------------------
 
 The CodeCube framework has a few system requirements. Installing Apache distribution packages such as Xampp, Wamp, Laragon (for windows) or a standard Lamp stack setup (for Linux) will satisfy most if not all requirements. If you are setting up an Apache server manually, make sure your server meets the following requirements:
 
@@ -17,7 +17,7 @@ The CodeCube framework has a few system requirements. Installing Apache distribu
 * XML PHP Extension
 
 Additional Requirements
------------
+-----------------------
 
 * Relational database such as MySQL
 * Git
@@ -27,7 +27,7 @@ Additional Requirements
 You can follow `this tutorial <https://www.linkedin.com/pulse/full-web-development-environment-setup-step-guide-php-mahadi-hasan/>`_ while setting up Lamp server in Debian based Linux distro to ensure your server setup is up to the standard.
 
 Installing Codecube
------------
+-------------------
 
 First make sure you have Git installed. Go to your server root directory (for example **var/www/html** in Lamp depending on your settings), open it in terminal (or gitbash if you’re in windows) and run the following command-
 
