@@ -14,4 +14,4 @@ Aims of this framework are to-
 .. toctree::
 
    self <Prologue>
-   installation <Installation>
+   Installation <installation>
