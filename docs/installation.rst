@@ -31,7 +31,7 @@ Installing Codecube
 
 First make sure you have Git installed. Go to your server root directory (for example **var/www/html** in Lamp depending on your settings), open it in terminal (or gitbash if you’re in windows) and run the following command-
 
-.. code-block:: yaml
+.. code-block:: text
 
 	composer create-project codecube/codecube
 
@@ -39,7 +39,7 @@ Running this command will automatically setup all composer dependencies.
 
 Alternatively, you can run the following command to clone from the GitHub repository directly.
 
-.. code-block:: yaml
+.. code-block:: text
 
 	git clone https://github.com/bappychanting/codecube.git
 
@@ -47,18 +47,18 @@ You will see it has created a folder titled **codecube**. Customize the folder n
 
 You can run the following command and change **my-folder-name** to set your desired folder name directly- 
 
-.. code-block:: yaml
+.. code-block:: text
 
 	git clone https://github.com/bappychanting/codecube.git my-folder-name
 
 Once done navigate to the folder and update composer via following command-
 
-.. code-block:: yaml
+.. code-block:: text
 
 	composer update
 
 Afterwards, go to the terminal, make sure the path is set to your project folder and run below command to start your project-
 
-.. code-block:: yaml
+.. code-block:: text
 
 	php -S localhost:8000

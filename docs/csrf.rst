@@ -7,7 +7,7 @@ CodeCube automatically generates a **CSRF token** for each active user session m
 
 Anytime you define an HTML form in your application, you should include a hidden **_token** field in the form so that the framework can validate the request-
 
-.. code-block:: yaml
+.. code-block:: text
 
 	<form method="POST" action="<?php echo route('items/store'); ?>">
 	<input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
@@ -18,14 +18,14 @@ X-CSRF-TOKEN
 
 In addition to checking for the **CSRF** token as a POST parameter, the framework will also check for the **X-CSRF-TOKEN** request header. You could, for example, store the token in an HTML meta tag:
 
-.. code-block:: yaml
+.. code-block:: text
 
 	<meta name="csrf-token" content="<?php echo csrf_token(); ?>">
 
 Then, once you have created the meta tag, you can instruct a library like jQuery to automatically add the token to all request headers. This provides simple, convenient **CSRF** protection for your AJAX based applications-
 
 
-.. code-block:: yaml
+.. code-block:: text
 
 	$.ajaxSetup({
 	    headers: {

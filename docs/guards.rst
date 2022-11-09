@@ -3,7 +3,7 @@ Guards
 
 **Guard** classes allow to perform actions such as request checking, filtering, redirection etc. conveniently before executing a controller method. It encapsulates these filtering logic, and as such, helps to perform actions such as authentication or access control while called, without repeating codes in different controller classes. 
 
-.. code-block:: yaml
+.. code-block:: text
 
 	<?php
 	namespace App\Http\Guards;
@@ -24,6 +24,6 @@ Guard classes are defined in **app/Http/Guards** folder. Below is an example of 
 
 This guard can be called within a controller method like below-
 
-.. code-block:: yaml
+.. code-block:: text
 
 	$this->guard('CheckGuest');

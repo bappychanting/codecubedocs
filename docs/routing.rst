@@ -12,7 +12,7 @@ To do that, open **config/url.php** file and modify the value of **landing** key
 
 As value, you must type the name of the controller class first, then method of the class to be called after **@** sign-
 
-.. code-block:: yaml
+.. code-block:: text
 
 	HomeController@welcome
 
@@ -27,7 +27,7 @@ Defining Web Routes
 
 To define web routes, open **routes/web.php** file. There, you can define the URL for the route as a key of the array returned, and name of the controller class along with the method called from the class as its value-
 
-.. code-block:: yaml
+.. code-block:: text
 
 	‘welcome’ => 'HomeController@welcome'
 
@@ -35,7 +35,7 @@ In the above example, for the *your-site-url/welcome* URL, **welcome** method fr
 
 To include SEO friendly URL parameters to your web routes, include curly brackets to each of the route keywords that you want to use as a URL parameter like below-
 
-.. code-block:: yaml
+.. code-block:: text
 
 	‘blog/show/{blog_id}’ => 'BlogController@show'
 
@@ -46,7 +46,7 @@ Defining API Routes
 
 To define API routes, open **routes/api.php** file. There, you can define the API routes similarly to how the web routes are defined above-
 
-.. code-block:: yaml
+.. code-block:: text
 
 	'test_api' => 'HomeController@testApi',
 
@@ -59,19 +59,19 @@ CodeCube provides some default functions for working with routes and URLs.
 
 To show a route link in a view, use the **route()** method. The route must be defined in the **routes/web.php** file as a route key, otherwise the framework will report error.
 
-.. code-block:: yaml
+.. code-block:: text
 	
 	echo route('signup'); 
 
 You can add additional parameters to the route as an associative array like below-
 
-.. code-block:: yaml
+.. code-block:: text
 	
 	echo route('items/show', ['id' => $item['id']]);
 
 If your web route includes SEO friendly URL parameters, you can set the value for those parameters defined in the route using the passed associative array like below-
 
-.. code-block:: yaml
+.. code-block:: text
 	
 	echo route('blog/show/{blog_id}', ['blog_id' => 5]);
 
@@ -79,7 +79,7 @@ Here, **{blog_id}** will be replaced by the value of **blog_id** from the associ
 
 To generate API links, use the **api_route()** function. It works almost the same way as the **route()** function, except it doesn’t support SEO friendly URL parameters.
 
-.. code-block:: yaml
+.. code-block:: text
 	
 	echo api_route('sitemap', ['id' => 5]);
 
@@ -87,13 +87,13 @@ It will generate the link *your-site-url/api/sitemap?id=5*. Notice that, similar
 
 Sometimes during routing you might need to include **$_GET** parameters of the current URL along with additional **$_GET** parameters you want to pass to a URL. You can do this using **routeUrl()** method. The third parameter takes the list of **$_GET** parameters of the current URL you want to exclude, as an array-
 
-.. code-block:: yaml
+.. code-block:: text
 	
 	echo routeUrl('items/show', ['id' => $item['id']], ['item_token]);
 
 If your web route includes SEO friendly URL parameters, in above function, you can set the value for those parameters defined in the route in a similar fashion as the **route()** function-
 
-.. code-block:: yaml
+.. code-block:: text
 	
 	echo routeUrl('blog/show/{blog_id}', ['blog_id' => 5, 'keyword' => 'author'], ['blog_id']);
 
@@ -101,7 +101,7 @@ It URL it will generate is *your-site-url/blog/show/5?keyword=author*.
 
 To check whether the current URL is a specific route, use the **route_is()** method.
 
-.. code-block:: yaml
+.. code-block:: text
 	
 	echo route_is('home') ? 'active' : ‘’;
 
@@ -109,7 +109,7 @@ In the above code, the framework checks whether the current route is **home** an
 
 To exclude specific keywords from route during checking, add curly braces to the route keywords like below-
 
-.. code-block:: yaml
+.. code-block:: text
 	
 	echo route_is('blog/show/{blog_id}/author') ? 'active' : ‘’;
 
@@ -117,13 +117,13 @@ In the above example, the function will automatically exclude the **{blog_id}** 
 
 To get the route from the current URL, use **get_route()** method. For URL *your-site-url/home*, this method will extract the route **home**-
 
-.. code-block:: yaml
+.. code-block:: text
 	
 	echo get_route();
 
 You can replace certain keywords of the URL by passing the list of keywords and their position as parameter to get a more precise route-
 
-.. code-block:: yaml
+.. code-block:: text
 	
 	echo get_route(['2' => '{blog_id}']);
 
@@ -131,12 +131,12 @@ Above for URL *your-site-url/blog/show/45*, the function will return “blog/sho
 
 To get the URL of the current page use the following function-
 
-.. code-block:: yaml
+.. code-block:: text
 	
 	echo get_url();
 
 To redirect from controller to the last visited URL of the site from where some form data was submitted, use **back()** function-
 
-.. code-block:: yaml
+.. code-block:: text
 	
 	echo back();

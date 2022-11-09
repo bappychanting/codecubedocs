@@ -10,6 +10,7 @@
    	Routing <routing>
    	Guards <guards>
    	CSRF Protection <csrf>
+   	Controllers <controllers>
 
 CodeCube Framework
 ==================

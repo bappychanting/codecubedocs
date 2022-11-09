@@ -7,7 +7,7 @@ Environment Configuration
 
 If you go to project folder, you’ll find there is a project configuration file titled **env.example.php**. Make a copy of the file and rename it to **env.php**. You can either do it manually via file manager or run the following command in the previously opened terminal/git bash window-
 
-.. code-block:: yaml
+.. code-block:: text
 	
 	cp env.example.php env.php
 
