@@ -5,6 +5,11 @@
    	Prologue <self>
    	Installation <installation>
    	Configuration <configuration>
+   	Directory Structure <directory>
+   	Architecture Concept <architecture>
+   	Routing <routing>
+   	Guards <guards>
+   	CSRF Protection <csrf>
 
 CodeCube Framework
 ==================

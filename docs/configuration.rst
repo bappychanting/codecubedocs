@@ -7,7 +7,9 @@ Environment Configuration
 
 If you go to project folder, you’ll find there is a project configuration file titled **env.example.php**. Make a copy of the file and rename it to **env.php**. You can either do it manually via file manager or run the following command in the previously opened terminal/git bash window-
 
-``cp env.example.php env.php``
+.. code-block:: yaml
+	
+	cp env.example.php env.php
 
 Open the **env.php** file in a text editor and change the values of the constants to set up your project. The setup constants are explained below-
 Set Application Values
