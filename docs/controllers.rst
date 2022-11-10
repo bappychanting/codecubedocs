@@ -38,7 +38,7 @@ The **view()** Method: This method is used for calling view files at the end of 
         return $this->view('front.home', compact(‘auth’));
     }
 
-In the above example, **views/front/home.php** view file is called in the **HomeController::home()** method and the authentication data is passed in the view.
+In the above example, **views/front/home.php** view file is called in the ``HomeController::home()`` method and the authentication data is passed in the view.
 
 The **redirect()** Method: Used for redirecting to different route urls. 
 
@@ -49,7 +49,7 @@ The **redirect()** Method: Used for redirecting to different route urls.
             $this->redirect('items/show', ['id' => 1]);
     }
 
-In the above example, the **HomeController::redirect()** method redirects to **items/show** route with id parameter.
+In the above example, the ``HomeController::redirect()`` method redirects to **items/show** route with id parameter.
 
 The **abort()** Method: This method is used to redirect to error pages. 
 
@@ -60,4 +60,4 @@ The **abort()** Method: This method is used to redirect to error pages.
         $this->abort(404);
     }
 
-In the above example, the **HomeController::error()** method shows the **404** error page to the user.
+In the above example, the ``HomeController::error()`` method shows the **404** error page to the user.

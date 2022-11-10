@@ -11,6 +11,7 @@
    	Guards <guards>
    	CSRF Protection <csrf>
    	Controllers <controllers>
+   	Session Requests <session>
 
 CodeCube Framework
 ==================
