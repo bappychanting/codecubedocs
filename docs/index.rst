@@ -12,6 +12,15 @@
    	CSRF Protection <csrf>
    	Controllers <controllers>
    	Session Requests <session>
+   	Frontend\Views <frontend>
+   	Localization <localization>
+   	Form Validation <validation>
+   	Database <database>
+   	Authentication <authentication>
+   	Mail <mail>
+   	Helpers <helpers>
+   	Sitemap <sitemap>
+   	Built In Application <application>
 
 CodeCube Framework
 ==================

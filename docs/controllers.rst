@@ -22,7 +22,7 @@ Below is an example of a basic controller class-
 
 Here are the **BaseController** class methods that can be used in controller classes:
 
-The **config()** Method: This method can be used to call configuration files from the **config** directory. If the config file is nested inside directories, the directory tree of the config file is represented via (.) dots. Below the **config/dev/app.php** file is called by this method and saved in **$app** variable.
+The **config()** Method: This method can be used to call configuration files from the **config** directory. If the config file is nested inside directories, the directory tree of the config file is represented via (.) dots. Below the **config/dev/app.php** file is called by this method and saved in ``$app`` variable.
 
 .. code-block:: text    
 
