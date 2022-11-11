@@ -6,7 +6,7 @@ The entry and exit point of the whole framework is **index.php** file. This file
 The framework follows **MVC** (Model, View, Controller) pattern. How the general flow of activities follows this design pattern within this framework is explained below-
 
 * Models are where all the classes based on the real life entities associated with the program, their relations, objects and methods are defined, and **OOP** (Object Oriented Programming) concept is applied on top of them. This is where different **CRUD** (create, retrieve, update, delete) actions are generally performed and passed to the Controller.  
-* Controllers retrieve data returned from model, perform necessary actions on them and pass it to the view. Generally access control logic is applied here as well. 
+* Controllers retrieve data returned from model, perform necessary actions on them and pass it to the view. Generally, access control logic is applied here as well. 
 * Views are used to construct visual layout and present the data to the user. 
 
 Additionally, apart from working on models, views and controllers: 

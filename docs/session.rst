@@ -58,7 +58,7 @@ Sometimes you might need to flash session data to display alerts, warnings etc. 
 
 	Request::setFlash([‘success’ => ‘Item added!’]);
 
-To flash the session data, use Request::getFlash() like below-
+To flash the session data, use ``Request::getFlash()`` like below-
 
 .. code-block:: text
 

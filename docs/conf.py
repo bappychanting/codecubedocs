@@ -2,6 +2,8 @@ import sphinx_rtd_theme
 html_theme = "sphinx_rtd_theme"
 html_theme_path = ["_themes", ]
 
+master_doc = 'index'
+
 html_title = "CodeCube"
 html_logo = "https://user-images.githubusercontent.com/22908406/200573841-1b090676-6692-4762-9657-782dd98b56ab.png"
 html_favicon = "https://user-images.githubusercontent.com/22908406/200559448-e76b9b36-89aa-4463-b9a1-72c330dc1dba.png"

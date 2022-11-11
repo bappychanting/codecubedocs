@@ -12,7 +12,9 @@ If you go to project folder, you’ll find there is a project configuration file
 	cp env.example.php env.php
 
 Open the **env.php** file in a text editor and change the values of the constants to set up your project. The setup constants are explained below-
+
 Set Application Values
+~~~~~~~~~~~~~~~~~~~~~~
 
 * **APP_NAME:** Defines application name e.g. if you are creating a blog you can rename the constant into “My Blog”. 
 * **APP_URL:** Defines the application default URL. By default it is set to local server address *http://localhost:8000*. You should set it to domain/subdomain address once deployed in an online server. You can set the protocol dynamically using this code: ``(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on' ? 'https' : 'http').'://localhost:8000'``.
