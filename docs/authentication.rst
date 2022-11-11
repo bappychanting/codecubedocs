@@ -3,42 +3,61 @@ Authentication
 
 CodeCube provides built-in Authentication class for easier implementation of authentication. To access its functionalities, call the class at the top of your PHP file like below-
 
-use Base\Authenticable; 
+.. code-block:: text
+	
+	use Base\Authenticable; 
 
 Sign In/Sign out
+----------------
 
-Once called, you can use its ​signin() function to authenticate a user to the system. The method will check whether any user’s email or username matches with the passed identity, and if found, signs the user in to the system.
+Once called, you can use its **signin()** function to authenticate a user to the system. The method will check whether any user’s email or username matches with the passed **identity**, and if found, signs the user in to the system.
 
-$auth = new Authenticable; 
-$auth->signin(‘identity’, ‘password’); 
+.. code-block:: text
 
-You can pass in the name of your “remember me” checkbox as the third parameter to the signin() method if you want to enable persistent login cookies for your authentication.
+	$auth = new Authenticable; 
+	$auth->signin(‘identity’, ‘password’); 
 
-$auth->signin(‘identity’, ‘password’, 'remember'); 
+You can pass in the name of your “remember me” checkbox as the third parameter to the **signin()** method if you want to enable persistent login cookies for your authentication.
 
-Once authenticated, you can use the ​getAuth()​ method to get authenticated user data.
+.. code-block:: text
 
-$auth_user = $auth->getAuth(); 
+	$auth->signin(‘identity’, ‘password’, 'remember'); 
 
-You can use the ​check() method to check whether a user is authenticated.
+Once authenticated, you can use the **getAuth()** method to get authenticated user data.
 
-echo $auth->check() ? ‘authenticated’ : ‘not authenticated’; 
+.. code-block:: text
 
-You can sign out the user using the ​signout()​ method.
+	$auth_user = $auth->getAuth(); 
 
-auth->signout(); 
+You can use the **check()** method to check whether a user is authenticated.
+
+.. code-block:: text
+
+	echo $auth->check() ? ‘authenticated’ : ‘not authenticated’; 
+
+You can sign out the user using the **signout()** method.
+
+.. code-block:: text
+	
+	auth->signout(); 
 
 Password Reset
+--------------
 
-While resetting password, use the​ storelink() method with a unique string and user Id as its parameters to store reset links. The unique string will be stored as password reset link parameter to make the link only accessible by the requesting user-
+While resetting password, use the **storelink()** method with a unique string and user Id as its parameters to store reset links. The unique string will be stored as password reset link parameter to make the link only accessible by the requesting user-
 
-$auth->storeLink(md5(uniqid()), 1); 
+.. code-block:: text
 
-Pass the token as a parameter to the ​getLink() method to check whether the token exists and get other information for the requesting user once the user clicks on the unique password reset link. ​
+	$auth->storeLink(md5(uniqid()), 1); 
 
-$auth->​getLink​($_GET[‘token’]); 
+Pass the token as a parameter to the **getLink()** method to check whether the token exists and get other information for the requesting user once the user clicks on the unique password reset link.
 
-Once the user resets his password, you can set the unique token invalid using the updateValidity()​ method so that it won’t be accessible anymore.
+.. code-block:: text
 
-$auth->updateValidity($token);
+	$auth->getLink($_GET[‘token’]); 
 
+Once the user resets his password, you can set the unique token invalid using the **updateValidity()** method so that it won’t be accessible anymore.
+
+.. code-block:: text
+
+	$auth->updateValidity($token);
