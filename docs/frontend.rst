@@ -8,7 +8,7 @@ As explained in :doc:`directory`, all the files necessary to generate views are 
 Defining Layouts
 ----------------
 
-To define a layout, you can create a **layout.php** file, and use **startblock()** & **endblock()** methods to define each section for the layout like below-
+To define a layout, you can create a **layout.php** file, and use ``startblock()`` & ``endblock()`` methods to define each section for the layout like below-
 
 .. code-block:: text
 
@@ -34,12 +34,12 @@ Once defined you can extend the layout file in **home.php** file like below-
 	 
 	<?php startblock('content') ?>This is my content!<?php endblock() ?> 
 
-Above, the **inherits()** method is used to call the parent view the child view is extending form.
+Above, the ``inherits()`` method is used to call the parent view the child view is extending form.
 
 Including other views & assets
 ------------------------------
 
-To include other views, use the **append()** method like below-
+To include other views, use the ``append()`` method like below-
 
 .. code-block:: text
 
@@ -47,43 +47,43 @@ To include other views, use the **append()** method like below-
 
 Above, **views/front/leftbar.php** file is included in the **home.php** file and items array is passed to it.
 
-To include css files, use the **style()** method like below-
+To include css files, use the ``style()`` method like below-
 
 .. code-block:: text
 
 	echo style('style.css');  
 
-To include js files, use the **script()** method like below-
+To include js files, use the ``script()`` method like below-
 
 .. code-block:: text
 
 	echo script('script.js');
 
-To show the title of the application, use the **title()** method. To show any other text other then title, pass the text as parameter-
+To show the title of the application, use the ``title()`` method. To show any other text other then title, pass the text as parameter-
 
 .. code-block:: text
 
 	echo title(‘My Title’); 
 
-It will show the generated title using the text along with project name given in the **APP_NAME** constant, like this-
+It will show the generated title using the text along with project name given in the ``APP_NAME`` constant, like this-
 
 .. code-block:: text
 
 	My Title || Project Name 
 
-To get the source of a file uploaded in the directory defined in the **upload** key in **config/app.php** file in a view, use the **asset()** method like below-
+To get the source of a file uploaded in the directory defined in the ``upload`` key in **config/app.php** file in a view, use the ``asset()`` method like below-
 
 .. code-block:: text
 
 	echo asset(‘document.pdf’); 
 
-To show image in view, use the **image()** method like below-
+To show image in view, use the ``image()`` method like below-
 
 .. code-block:: text
 
 	echo image(‘my_image.jpg’);
 
-To show an image’s thumbnail in view that was saved during upload, pass the thumbnail extension text as an argument to the **image()** method like below-
+To show an image’s thumbnail in view that was saved during upload, pass the thumbnail extension text as an argument to the ``image()`` method like below-
 
 .. code-block:: text
 
@@ -91,7 +91,7 @@ To show an image’s thumbnail in view that was saved during upload, pass the th
 
 The framework will automatically detect whether the image exists, If not it will use the default image from `placeholder.com <https://placeholder.com/>`_ as placeholder.
 
-To show the default icon of the website, use the **icon()** method like below-
+To show the default icon of the website, use the ``icon()`` method like below-
 
 .. code-block:: text
 

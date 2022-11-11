@@ -5,7 +5,7 @@ CodeCube makes it easy to protect your application from `cross-site request forg
 
 CodeCube automatically generates a **CSRF token** for each active user session managed by the application. This token is used to verify that the authenticated user is the one actually making the requests to the application.
 
-Anytime you define an HTML form in your application, you should include a hidden **_token** field in the form so that the framework can validate the request-
+Anytime you define an HTML form in your application, you should include a hidden ``_token`` field in the form so that the framework can validate the request-
 
 .. code-block:: text
 

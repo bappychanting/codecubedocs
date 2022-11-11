@@ -22,13 +22,13 @@ Below is an example of a basic controller class-
 
 Here are the **BaseController** class methods that can be used in controller classes:
 
-* The **config()** Method: This method can be used to call configuration files from the **config** directory. If the config file is nested inside directories, the directory tree of the config file is represented via (.) dots. Below the **config/dev/app.php** file is called by this method and saved in ``$app`` variable.
+* The ``config()`` Method: This method can be used to call configuration files from the **config** directory. If the config file is nested inside directories, the directory tree of the config file is represented via ``.`` dots. Below the **config/dev/app.php** file is called by this method and saved in ``$app`` variable.
 
 .. code-block:: text    
 
 	$app = $this->config('dev.app');
 
-* The **view()** Method: This method is used for calling view files at the end of controller method and pass data to them. The directory tree of the view file is represented via (.) dots. 
+* The ``view()`` Method: This method is used for calling view files at the end of controller method and pass data to them. The directory tree of the view file is represented via ``.`` dots. 
 
 .. code-block:: text
 
@@ -40,7 +40,7 @@ Here are the **BaseController** class methods that can be used in controller cla
 
 In the above example, **views/front/home.php** view file is called in the ``HomeController::home()`` method and the authentication data is passed in the view.
 
-* The **redirect()** Method: Used for redirecting to different route urls. 
+* The ``redirect()`` Method: Used for redirecting to different route urls. 
 
 .. code-block:: text
 
@@ -51,7 +51,7 @@ In the above example, **views/front/home.php** view file is called in the ``Home
 
 In the above example, the ``HomeController::redirect()`` method redirects to **items/show** route with id parameter.
 
-* The **abort()** Method: This method is used to redirect to error pages. 
+* The ``abort()`` Method: This method is used to redirect to error pages. 
 
 .. code-block:: text
 

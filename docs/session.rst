@@ -1,7 +1,7 @@
 Session Requests
 ================
 
-Base **Request** class is used to access various session data. All data that are controlled using **Request** class are stored in the **Request** key of session array. To use the **Request** class, call it on top of your class like below-
+Base **Request** class is used to access various session data. All data that are controlled using **Request** class are stored in the ``request`` key of session array. To use the **Request** class, call it on top of your class like below-
 
 .. code-block:: text
 
@@ -18,7 +18,7 @@ You can input new data into session using the ``Request::setData()`` method like
 
 	Request::setData(‘color-green’, ‘green);
 
-Here, **color** is the name (key) of session and green is the value. To read the input value you can use ``Request::getData()`` method like below-
+Here, ``color`` is the name (key) of session and ``green`` is the value. To read the input value you can use ``Request::getData()`` method like below-
 
 .. code-block:: text
 

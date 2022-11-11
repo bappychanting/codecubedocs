@@ -9,9 +9,10 @@ To manage the sitemap, include the base Sitemap class in your .php file like bel
 
 	use Base\Sitemap; 
 
-**Setting up Sitemap**
+Setting up Sitemap
+~~~~~~~~~~~~~~~~~~
 
-To setup Sitemap for the first time or to add multiple new URLs to sitemap, use the **updateNodes()** method like below-
+To setup Sitemap for the first time or to add multiple new URLs to sitemap, use the ``updateNodes()`` method like below-
 
 .. code-block:: text
 
@@ -26,7 +27,7 @@ To setup Sitemap for the first time or to add multiple new URLs to sitemap, use 
 Adding an URL to Sitemap
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-To add a new URL to the sitemap, use the **addNode()** method with **route()** method like below-
+To add a new URL to the sitemap, use the ``addNode()`` method with ``route()`` method like below-
 
 .. code-block:: text
 
@@ -36,7 +37,7 @@ To add a new URL to the sitemap, use the **addNode()** method with **route()** m
 Deleting all URLs in Sitemap
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To delete all URLs in the **sitemap.xml**, use the **deleteNodes()** method like below-
+To delete all URLs in the **sitemap.xml**, use the ``deleteNodes()`` method like below-
 
 .. code-block:: text
 
@@ -46,7 +47,7 @@ To delete all URLs in the **sitemap.xml**, use the **deleteNodes()** method like
 Refreshing Sitemap
 ~~~~~~~~~~~~~~~~~~
 
-To refresh the sitemap, use the **refreshSitemap()** method like below-
+To refresh the sitemap, use the ``refreshSitemap()`` method like below-
 
 .. code-block:: text
 

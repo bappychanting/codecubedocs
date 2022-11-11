@@ -6,7 +6,7 @@ CodeCube provides some built in mechanisms for easier database interaction.
 Configuring Database
 --------------------
 
-As discussed in :doc:`configuration` chapter, you can configure the database connection by changing the **DB** constants in **env.php** file like below-
+As discussed in :doc:`configuration` chapter, you can configure the database connection by changing the ``DB_`` constants in **env.php** file like below-
 
 .. code-block:: text
 
@@ -29,7 +29,7 @@ You can use CodeCube’s built in functionalities to perform **CRUD** (Create, R
 Retrieving Results
 ------------------
 
-To read a table from database, use the **table()** method of the **DB** class to begin query, and **read()** method to get the result.
+To read a table from database, use the ``table()`` method of the **DB** class to begin query, and ``read()`` method to get the result.
 
 .. code-block:: text
 
@@ -39,7 +39,7 @@ To read a table from database, use the **table()** method of the **DB** class to
 Aggregation
 ~~~~~~~~~~~
 
-To get the sum of the last set of values returned by **read()** method, use the **getTotal()** method-
+To get the sum of the last set of values returned by ``read()`` method, use the ``getTotal()`` method-
 
 .. code-block:: text
 
@@ -48,19 +48,19 @@ To get the sum of the last set of values returned by **read()** method, use the 
 Add Conditions
 ~~~~~~~~~~~~~~
 
-To apply the SQL **where** clause on records, combine the **where()** method with other clauses-
+To apply the SQL **where** clause on records, combine the ``where()`` method with other clauses-
 
 .. code-block:: text
 
     $items = $db->table('items')->where('user_id', '=',  1)->read(); 
 
-You can use the **or()** method, **and()** method or **not()** method along with **where()** method like below-
+You can use the ``or()`` method, ``and()`` method or ``not()`` method along with ``where()`` method like below-
 
 .. code-block:: text
 
     $items = $db->table('items')->where('user_id', '=',  1)->and(‘price’, ‘<’, ‘250’)->or(‘price’, ‘>’, ‘50’)->where()->not('name', '=', 'buy')->and()->not('name', '=', 'buying')->read(); 
 
-To add extra conditions use the **condition()** method-
+To add extra conditions use the ``condition()`` method-
 
 .. code-block:: text
 
@@ -69,7 +69,7 @@ To add extra conditions use the **condition()** method-
 Ordering
 ~~~~~~~~
 
-Use the **orderBy()** method at the end of your conditions to order your results-
+Use the ``orderBy()`` method at the end of your conditions to order your results-
 
 .. code-block:: text
 
@@ -78,25 +78,25 @@ Use the **orderBy()** method at the end of your conditions to order your results
 Pagination
 ~~~~~~~~~~
 
-To get paginated data from the database, use the **limit()** method before **read()** method-
+To get paginated data from the database, use the ``limit()`` method before ``read()`` method-
 
 .. code-block:: text
 
     $items = $db->table('items')->limit(2)->read(); 
 
-Afterwards, you can get a pagination of your query using the **pagination()** method-
+Afterwards, you can get a pagination of your query using the ``pagination()`` method-
 
 .. code-block:: text
 
     $pagination = $db->pagination(); 
 
-Additionally, you can use the **paginationData()** method to get necessary pagination data as array-
+Additionally, you can use the ``paginationData()`` method to get necessary pagination data as array-
 
 .. code-block:: text
 
     $data = $db->paginationData()
 
-Afterwards, pass the array values as parameters to **generatePages()** method to generate the pagination-
+Afterwards, pass the array values as parameters to ``generatePages()`` method to generate the pagination-
 
 .. code-block:: text
 
@@ -105,7 +105,7 @@ Afterwards, pass the array values as parameters to **generatePages()** method to
 Inserting Data
 --------------
 
-To insert data in the database, use the **create()** method in combination with **table()** method, and **data()** method to pass input data array, where keys are the name of the table columns and their values are the input values-
+To insert data in the database, use the ``create()`` method in combination with ``table()`` method, and ``data()`` method to pass input data array, where keys are the name of the table columns and their values are the input values-
 
 .. code-block:: text
 
@@ -114,7 +114,7 @@ To insert data in the database, use the **create()** method in combination with 
 Updating Data
 -------------
 
-To update data of a row in the database, use the **update()** method in combination with **table()** method, and **set()** method to pass update data array, where keys are the name of the table columns and their values are the updated values-
+To update data of a row in the database, use the ``update()`` method in combination with ``table()`` method, and ``set()`` method to pass update data array, where keys are the name of the table columns and their values are the updated values-
 
 .. code-block:: text
 
@@ -123,7 +123,7 @@ To update data of a row in the database, use the **update()** method in combinat
 Deleting Data
 -------------
 
-Before deleting, CodeCube checks whether **deleted_at** column exists in a table. If it does, instead of deleting the column completely, the framework updates the column value to current date-time, and ignores the rows with NOT NULL values for **deleted_at** column in **read()** method. If the column doesn’t exist, the framework deletes the row completely. To delete a row from a table, use the **delete()** method.
+Before deleting, CodeCube checks whether ``deleted_at`` column exists in a table. If it does, instead of deleting the column completely, the framework updates the column value to current date-time, and ignores the rows with NOT NULL values for ``deleted_at`` column in ``read()`` method. If the column doesn’t exist, the framework deletes the row completely. To delete a row from a table, use the ``delete()`` method.
 
 .. code-block:: text
 
@@ -132,13 +132,13 @@ Before deleting, CodeCube checks whether **deleted_at** column exists in a table
 Raw SQL Query
 -------------
 
-You can use the **get()** method to directly input a SQL read command-
+You can use the ``get()`` method to directly input a SQL read command-
 
 .. code-block:: text
 
     $db->get('SELECT name, username FROM users'); 
 
-You can use the **write()** method to write raw SQL command to insert, update or delete data into the table.
+You can use the ``write()`` method to write raw SQL command to insert, update or delete data into the table.
 
 .. code-block:: text
 
@@ -164,7 +164,7 @@ And later, use query builder to read data from the view-
 Return SQL Command
 ------------------
 
-To find the last executed SQL command string, use the **getLastSQL()** method-
+To find the last executed SQL command string, use the ``getLastSQL()`` method-
 
 .. code-block:: text
 
@@ -205,4 +205,4 @@ Like the create/drop migration commands, place your insert commands inside a ret
 
     'insert_users' => 'INSERT INTO `users` VALUES (1,"Default User","codecube","codecube@gmail.com","secret", NULL, NULL);', 
 
-To migrate your database, go to *your-server-url/migration_url-defined-in-url-config* from your browser. Once there, provide your application key defined the **APP** constants in the **env.php** file and click on :guilabel:`proceed` button to start migration. If you want to reset your previously migrated table, click on the :guilabel:`Reset Migration Table` checkbox. When the application is live in production server, change the value of **APP_ENV** constant in **env.php** file to turn off migration.
+To migrate your database, go to *your-server-url/migration_url-defined-in-url-config* from your browser. Once there, provide your application key defined the ``APP`` constants in the **env.php** file and click on :guilabel:`proceed` button to start migration. If you want to reset your previously migrated table, click on the :guilabel:`Reset Migration Table` checkbox. When the application is live in production server, change the value of ``APP_ENV`` constant in **env.php** file to turn off migration.

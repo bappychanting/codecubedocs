@@ -39,7 +39,7 @@ To include SEO friendly URL parameters to your web routes, include curly bracket
 
 	‘blog/show/{blog_id}’ => 'BlogController@show'
 
-Note that, here, the generated **$_GET** parameter for **{blog_id}** will simply exclude the curly brackets, i.e., it will be ``blog_id``. Furthermore, to identify such a route, the route must include at least one route keyword that is not a URL parameter. Finally, if there are a list of routes that only differ by the name of URL parameter(s) inside the curly braces, always the first route from that list will be called to execute the assigned controller method.
+Note that, here, the generated **$_GET** parameter for ``{blog_id}`` will simply exclude the curly brackets, i.e., it will be ``blog_id``. Furthermore, to identify such a route, the route must include at least one route keyword that is not a URL parameter. Finally, if there are a list of routes that only differ by the name of URL parameter(s) inside the curly braces, always the first route from that list will be called to execute the assigned controller method.
 
 Defining API Routes
 -------------------
@@ -75,7 +75,7 @@ If your web route includes SEO friendly URL parameters, you can set the value fo
 	
 	echo route('blog/show/{blog_id}', ['blog_id' => 5]);
 
-Here, **{blog_id}** will be replaced by the value of ``blog_id`` from the associative array that has been passed as the function’s second parameter. Note that, to replace the route keyword with a value from the array, the key name MUST BE the same as the curly bracket excluded keyword from the route. The generated URL will be *your-site-url/blog/show/5*.
+Here, ``{blog_id}`` will be replaced by the value of ``blog_id`` from the associative array that has been passed as the function’s second parameter. Note that, to replace the route keyword with a value from the array, the key name MUST BE the same as the curly bracket excluded keyword from the route. The generated URL will be *your-site-url/blog/show/5*.
 
 To generate API links, use the ``api_route()`` function. It works almost the same way as the ``route()`` function, except it doesn’t support SEO friendly URL parameters.
 
@@ -113,7 +113,7 @@ To exclude specific keywords from route during checking, add curly braces to the
 	
 	echo route_is('blog/show/{blog_id}/author') ? 'active' : ‘’;
 
-In the above example, the function will automatically exclude the **{blog_id}** keyword and check whether the position of rest of the parameters match with current URL keywords, and return **TRUE** if they do.
+In the above example, the function will automatically exclude the ``{blog_id}`` keyword and check whether the position of rest of the parameters match with current URL keywords, and return **TRUE** if they do.
 
 To get the route from the current URL, use ``get_route()`` method. For URL *your-site-url/home*, this method will extract the route **home**-
 
