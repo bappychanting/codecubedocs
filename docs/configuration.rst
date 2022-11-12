@@ -18,7 +18,7 @@ Set Application Values
 
 * ``APP_NAME``: Defines application name e.g. if you are creating a blog you can rename the constant into “My Blog”. 
 * ``APP_URL``: Defines the application default URL. By default it is set to local server address *http://localhost:8000*. You should set it to domain/subdomain address once deployed in an online server. You can set the protocol dynamically using this code: ``(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on' ? 'https' : 'http').'://localhost:8000'``.
-* ``APP_ENV``: Defines the current application environment. BY default it is set to development environment- ‘dev’. You should change the value once you deploy the project in production server.
+* ``APP_ENV``: Defines the current application environment. BY default it is set to development environment- ``dev``. You should change the value once you deploy the project in production server.
 * ``APP_KEY``: The key will be used to enforce security in various project functionalities in development mode, such as for running migrations.  
 
 Set Database Values
@@ -50,6 +50,6 @@ Before starting up your application, you may want to checkout the application co
 * ``remember_me``: Declares how long the remember me cookie will last. Follow the same strategy as ``auth_time`` settings to update this value.
 * ``update_session_cookie_settings``: Declares whether the previously declared auth time will be actually activated and updated in php settings. Default value is ‘no’, setting it to ‘yes’ will update the php session settings. 
 * ``upload``: Declares where the uploaded files will be saved. By default the system will upload the files in **storage/app/public** folder.
-* ``auto_logging``: Declares whether the system will save various errors, warning etc. messages from the system or logs declared by you in various log files. By default it is ‘on’, changing the value to anything else will turn off auto-logging. The system saves the log files in **storage/logs** folder.
+* ``auto_logging``: Declares whether the system will save various errors, warning etc. messages from the system or logs declared by you in various log files. By default it is ``on``, changing the value to anything else will turn off auto-logging. The system saves the log files in **storage/logs** folder.
 
 Additionally you can run the migration files if you want to checkout the demo application ported with the framework. Go to *your-server-url/database_migration*, provide your application key you’ve set in the **env.php** file and click on the proceed button to create the necessary tables and Views for the demo application.
