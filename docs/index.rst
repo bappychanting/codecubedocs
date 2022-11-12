@@ -20,7 +20,7 @@
    	Mail <mail>
    	Helpers <helpers>
    	Sitemap <sitemap>
-   	Built In Application <application>
+   	Built-in Application <application>
 
 CodeCube Framework
 ==================
