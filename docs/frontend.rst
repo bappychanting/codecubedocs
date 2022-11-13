@@ -1,5 +1,5 @@
 Frontend\\Views
-==============
+===============
 
 To help generating views, CodeCube uses `PHP Template Inheritance <https://arshaw.com/phpti/>`_ plugin, as well as various custom methods.
 
