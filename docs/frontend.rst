@@ -89,7 +89,7 @@ To show an image’s thumbnail in view that was saved during upload, pass the th
 
 	echo image(‘my_image.jpg’, 'alt', [], '_thumb');
 
-The framework will automatically detect whether the image exists, If not it will use the default image from `placeholder.com <https://placeholder.com/>`_ as placeholder.
+The framework will automatically detect whether the image exists, if not it will use the value of ``placeholder`` key set in **config/app.php** instead.
 
 To show the default icon of the website, use the ``icon()`` method like below-
 

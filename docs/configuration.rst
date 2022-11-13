@@ -51,5 +51,7 @@ Before starting up your application, you may want to checkout the application co
 * ``update_session_cookie_settings``: Declares whether the previously declared auth time will be actually activated and updated in php settings. Default value is ‘no’, setting it to ‘yes’ will update the php session settings. 
 * ``upload``: Declares where the uploaded files will be saved. By default the system will upload the files in **storage/app/public** folder.
 * ``auto_logging``: Declares whether the system will save various errors, warning etc. messages from the system or logs declared by you in various log files. By default it is ``on``, changing the value to anything else will turn off auto-logging. The system saves the log files in **storage/logs** folder.
+* ``locale``: Declares the system locale. By default it is ``en`` (English).
+* ``placeholder``: Declares the default placeholder for all images in the website. By default the system uses images from `Lorem Picsum <https://picsum.photos/>`_ as placeholder.
 
 Additionally you can run the migration files if you want to checkout the demo application ported with the framework. Go to *your-server-url/database_migration*, provide your application key you’ve set in the **env.php** file and click on the proceed button to create the necessary tables and Views for the demo application.

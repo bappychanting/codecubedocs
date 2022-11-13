@@ -7,7 +7,7 @@ Aims of this framework are to
 
 ## Documentation
 
-To get the full documentation please visit [this page](https://codecube.readthedocs.io/en/latest/).
+To get the full documentation please visit [this page](https://codecube.readthedocs.io).
 
 ## License
 
