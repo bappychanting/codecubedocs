@@ -26,6 +26,7 @@ To show the error in the view page, use the ``field_err()`` method like below-
 To get all the errors found in the view page they were submitted from, use the ``getErrors()`` method.
 
 .. code-block:: text
+
     <p><?php print_r(getErrors()); ?></p>
 
 Get Previously Submitted Values
