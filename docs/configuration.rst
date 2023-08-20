@@ -18,8 +18,7 @@ Set Application Values
 
 * ``APP_NAME``: Defines application name e.g. if you are creating a blog you can rename the constant into “My Blog”. 
 * ``APP_URL``: Defines the application default URL. By default it is set to local server address *http://localhost:8000*. You should set it to domain/subdomain address once deployed in an online server. You can set the protocol dynamically using this code: ``(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on' ? 'https' : 'http').'://localhost:8000'``.
-* ``APP_ENV``: Defines the current application environment. BY default it is set to development environment- ``dev``. You should change the value once you deploy the project in production server.
-* ``APP_KEY``: The key will be used to enforce security in various project functionalities in development mode, such as for running migrations.  
+* ``APP_ENV``: Defines the current application environment. BY default it is set to development environment- ``dev``. You should change the value once you deploy the project in production server. 
 
 Set Database Values
 ~~~~~~~~~~~~~~~~~~~
@@ -54,4 +53,4 @@ Before starting up your application, you may want to checkout the application co
 * ``locale``: Declares the system locale. By default it is ``en`` (English).
 * ``placeholder``: Declares the default placeholder for all images in the website. By default the system uses images from `Lorem Picsum <https://picsum.photos/>`_ as placeholder.
 
-Additionally you can run the migration files if you want to checkout the demo application ported with the framework. Go to *your-server-url/database_migration*, provide your application key you’ve set in the **env.php** file and click on the proceed button to create the necessary tables and Views for the demo application.
+Additionally you can run the migration files if you want to checkout the demo application ported with the framework. Visit :ref:`Database Migration <database-migration>` for more information.

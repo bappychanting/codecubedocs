@@ -112,4 +112,10 @@ This will return string ``new-item``.
 
 .. code-block:: text
 
-    Upload::fileUpload($app['upload'].'/myimages/uploaded.jpeg', 640, 480, true); 
+    Upload::fileUpload($app['upload'].'/myimages/uploaded.jpeg', 640, 480, true);
+
+Aside from the helper functions provided with helper classes, **CodeCube** also provides some additional built-in functions to help with development and debugging. For example:
+
+* ``dd()`` Method: Dumps the variable passed as the only parameter and ends execution of the script.
+
+* ``logger()`` Method: To create logs. Simply pass the variable whose content you want to written in your log.

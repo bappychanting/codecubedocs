@@ -170,6 +170,8 @@ To find the last executed SQL command string, use the ``getLastSQL()`` method-
 
     logger($db->getLastSQL()); 
 
+.. _database-migration:
+
 Migration
 ---------
 
@@ -205,4 +207,10 @@ Like the create/drop migration commands, place your insert commands inside a ret
 
     'insert_users' => 'INSERT INTO `users` VALUES (1,"Default User","codecube","codecube@gmail.com","secret", NULL, NULL);', 
 
-To migrate your database, go to *your-server-url/migration_url-defined-in-url-config* from your browser. Once there, provide your application key defined the ``APP`` constants in the **env.php** file and click on :guilabel:`proceed` button to start migration. If you want to reset your previously migrated table, click on the :guilabel:`Reset Migration Table` checkbox. When the application is live in production server, change the value of ``APP_ENV`` constant in **env.php** file to turn off migration.
+To migrate your database, open terminal in your project root directory and execute the below command.
+
+.. code-block:: text
+
+    php index.php migrate reset
+
+To note, add the second argument ``reset`` only if you want to reset your previously migrated table.
