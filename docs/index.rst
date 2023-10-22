@@ -17,6 +17,7 @@
    	Form Validation <validation>
    	Database <database>
    	Authentication <authentication>
+   	Command Line <commands>
    	Mail <mail>
    	Helpers <helpers>
    	Sitemap <sitemap>

@@ -116,6 +116,6 @@ This will return string ``new-item``.
 
 Aside from the helper functions provided with helper classes, **CodeCube** also provides some additional built-in functions to help with development and debugging. For example:
 
-* ``dd()`` Method: Dumps the variable passed as the only parameter and ends execution of the script.
+* ``dd()`` Method: Dumps the values passed as the arguments and ends execution of the script. You can use commas (,) to seperate multiple arguments to be dumped.
 
-* ``logger()`` Method: To create logs. Simply pass the variable whose content you want to written in your log.
+* ``logger()`` Method: To create logs. Simply pass the content as the argument you want to write in your log.

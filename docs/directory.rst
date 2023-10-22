@@ -7,28 +7,34 @@ CodeCube follows a similar directory structure to `Laravel framework <https://la
    :caption: CodeCube Framework Directory Structure
 
 	/app
+	    /Console
+		 /Handlers
 	    /Helpers
 	    /Http
-	         /Controllers
-	         /Guards
+	        /Controllers
+	        /Guards
 	    /Models
 	/config
 	/database
 	/resources
-	      /assets
-	      /locale
-	      /markups
-	      /views
+	    /assets
+	    /locale
+	    /markups
+	    /views
 	/routes
 	/storage
-	      /app
-	         /public
-	      /logs
+	    /app
+	        /public
+	    /logs
 	/vendor
 
 Below the directories are briefly explained-
 
 * The **app** directory: This is the directory to store all your model, controller, guard and rest of the classes. This directory has three sub directories-
+
+ - **Console:** In this folder all the console commands along with their handlers are stored.
+
+  + **Handlers:** All the console ommand handler classes are stored here.
 
  - **Helpers:** This is where you store all your helper classes.
  - **Http:** This folder has two sub-classes-
