@@ -17,4 +17,10 @@ To use the command line arguments passed, use the ``$args`` variable defined in 
 
 .. code-block:: text
 
-	echo $this->args[1];
+	echo $this->getArgs()[1];
+
+Now you can execute the command from your command line interpreter. For example, below command :ref:`migrates your database <database-migration>`.
+
+.. code-block:: text
+
+    php index.php migrate
